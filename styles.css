@@ -1,0 +1,175 @@
+* {
+    margin: 10;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.name&int {
+    font-weight: bold;
+    color: #0e0606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.me {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: unset;
+    font-size: 18px;
+    padding-right: 20px;
+    width: 500px;
+}
+
+
+.next {
+    float: right;
+    text-align: center;
+    padding-right: 150px;
+}
+
+.next img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: .6rem;
+    border-color: #0e0606;
+
+}
+
+.Education {
+    background-color: #333333;
+    color: #cccccc67;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.Education p {
+    font-size: 18px;
+    width: 150;
+}
+
+.Education h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.Education h1 span {
+    color: #dad8d5;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #686666;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .me {
+        width: 100%;
+    }
+
+    .next img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Education {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .name&int,
+    .next {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .name&int,
+    .next {
+        margin-bottom: 0;
+    }
+
+    .name&int {
+        order: 2;
+    }
+
+    .next {
+        order: 1;
+    }
+}
